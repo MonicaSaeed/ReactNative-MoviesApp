@@ -18,7 +18,15 @@ const DrawerNavigation = () => {
     return (
         <MyDrawer.Navigator
             screenOptions={{
-                drawerType: "front", 
+                drawerType: "front",
+                headerStyle: {
+                    backgroundColor: '#1e1e1e',  
+                },
+                headerTintColor: '#ffffff',
+                headerTitleStyle: {
+                    fontSize: 20,
+                    fontWeight: 'bold',
+                },
                 drawerStyle: {
                     backgroundColor: "#121212", 
                     width: 260,
