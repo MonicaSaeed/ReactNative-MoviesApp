@@ -11,8 +11,8 @@ const MyCard = ({movie}) => {
                     <Text style={styles.title} variant="titleLarge">
                         {movie.title}
                     </Text>
-                    <Text variant="bodyMedium" style={styles.originalTitle}>
-                        {movie.original_title}
+                    <Text variant="bodyMedium" style={styles.date}>
+                        {movie.release_date}
                     </Text>
             </Card.Content>
             <Card.Actions>
@@ -31,14 +31,20 @@ const styles = StyleSheet.create({
     },
     originalTitle: {
         fontSize: 14,
-        color: '#BB86FC',
+        color: '#D7B7FF',
+        marginBottom: 10,
+        textAlign: 'center',
+    },
+    date: {
+        fontSize: 14,
+        color: '#D7B7FF',
         marginBottom: 10,
         textAlign: 'center',
     },
     title: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#BB86FC',
+        color: '#D7B7FF',
         marginBottom: 10,
         marginTop: 10,
         textAlign: 'center',
