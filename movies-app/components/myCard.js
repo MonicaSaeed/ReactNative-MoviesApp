@@ -31,14 +31,14 @@ const styles = StyleSheet.create({
     },
     originalTitle: {
         fontSize: 14,
-        color: '#fff',
+        color: '#BB86FC',
         marginBottom: 10,
         textAlign: 'center',
     },
     title: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#fff',
+        color: '#BB86FC',
         marginBottom: 10,
         marginTop: 10,
         textAlign: 'center',

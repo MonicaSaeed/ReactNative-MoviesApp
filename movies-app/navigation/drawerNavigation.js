@@ -22,7 +22,7 @@ const DrawerNavigation = () => {
                 headerStyle: {
                     backgroundColor: '#1e1e1e',  
                 },
-                headerTintColor: '#ffffff',
+                headerTintColor: '#BB86FC',
                 headerTitleStyle: {
                     fontSize: 20,
                     fontWeight: 'bold',
