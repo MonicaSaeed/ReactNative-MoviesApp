@@ -1,9 +1,12 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Card, Text } from 'react-native-paper';
+import { Card, Text, Button } from 'react-native-paper';
+import routes from '../utils/routes';
 
 const MyCard = ({movie}) => {
     const imageUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+    const navigate =  useNavigation();
     return (
         <Card style={styles.card}>
             <Card.Cover source={{ uri: imageUrl }} />
@@ -16,7 +19,10 @@ const MyCard = ({movie}) => {
                     </Text>
             </Card.Content>
             <Card.Actions>
-                {/* <Button onPress={() => console.log('Pressed')}>View Details</Button> */}
+                <Button onPress={() => navigate.navigate(routes.movieDetails, { movie })} mode="contained" buttonColor="#D7B7FF" textColor="#1e1e1e"
+                style={{ borderRadius: 10, margin: 10, backgroundColor: '#D7B7FF' }}>
+                    <Text style={{ fontSize: 14, fontWeight: 'bold' }}>Details</Text>
+                </Button>
             </Card.Actions>
         </Card>
     );

@@ -1,6 +1,6 @@
 const routes = Object.freeze({
     movies:"Movies",
-    movieDetails:"movieDetails",
+    movieDetails: "MovieDetails",
     moviesFavorites:"Favorites",
 });
 export default routes;
