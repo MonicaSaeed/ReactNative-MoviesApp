@@ -9,7 +9,7 @@ const About = () => {
                     source={require('../assets/background.png')} 
                     style={styles.image}
                 />
-                <Text style={styles.title}>🎬 Movie Explorer</Text>
+                <Text style={styles.title}>Movie Explorer</Text>
                 <Text style={styles.subtitle}>Discover the world of cinema!</Text>
 
                 <Text style={styles.sectionTitle}>📌 About This App</Text>
@@ -23,6 +23,8 @@ const About = () => {
                     - React Navigation{"\n"}
                     - TMDB API{"\n"}
                     - Styled using custom dark mode
+                    - Local storage for saved favorites "using react-native-storage"
+                    - State management with React Context API
                 </Text>
 
                 <Text style={styles.sectionTitle}>👨‍💻 Developer</Text>

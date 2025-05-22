@@ -12,7 +12,7 @@ const MoviesContextProvider = ({ children }) => {
 
     useEffect(() => {
         const keyAuth = API_KEY;
-        const totalPages = 3; 
+        const totalPages = 1; 
 
         const fetchAllPages = async (endpoint, setState) => {
             try {

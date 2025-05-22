@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native'; // ✅ Add Text here
+import { StyleSheet, View, Text } from 'react-native'; 
 
 const DateFormate = ({ date }) => {
     const formatDate = (dateString) => {

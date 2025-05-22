@@ -90,7 +90,7 @@ const Movies = () => {
         <FlatList
             style={styles.container}
             data={filteredMovies}
-            keyExtractor={(item) => item.id.toString() + item.title}
+            keyExtractor={item => `${item.id}_${item.title}`} 
             renderItem={({ item }) => (
             <View style={styles.movieCard}>
                 <MyCard movie={item} />
