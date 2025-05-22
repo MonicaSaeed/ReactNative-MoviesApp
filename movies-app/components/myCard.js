@@ -16,24 +16,27 @@ const MyCard = ({movie}) => {
 
     const isFav = favoriteMovieIds.includes(movie.id);
     const toggleFavorite = () => {
-  if (isFav) {
-    removeFavorite(movie.id);
-  } else {
-    addFavorite(movie.id); // Only store the ID
-  }   
-}
+        if (isFav) {
+            removeFavorite(movie.id);
+        } else {
+            addFavorite(movie.id); // Only store the ID
+        }   
+    }
 
     return (
         <Card style={styles.card}>
             <View style={{ position: 'relative' }}>
                 <Card.Cover source={{ uri: imageUrl }} style={{ borderTopLeftRadius: 10, borderTopRightRadius: 10 }} />
-                <MaterialCommunityIcons
+                <View style={styles.favButton}>
+                    <MaterialCommunityIcons
                     name={isFav ? "heart" : "heart-outline"}
                     size={30}
                     color="#F60002"
-                    style={{ position: 'absolute', top: 10, right: 10 }}
+                    style={{ position: 'absolute'}}
                     onPress={toggleFavorite}
                 />
+                </View>
+
             </View>
             <Card.Content>
                 <View style={{ alignItems: 'center' }}>
@@ -77,6 +80,17 @@ const styles = StyleSheet.create({
         color: '#D7B7FF',
         marginBottom: 10,
         marginTop: 10,
+    },
+    favButton: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
+        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+        borderRadius: 10,
+        width: 45,
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });
 
