@@ -4,6 +4,7 @@ import Fav from "../screens/fav";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { Image, View } from "react-native";
 import DynamicStackNavigation from "./dynamicStackNavigation";
+import About from "../screens/about";
 
 const MyDrawer = createDrawerNavigator();
 
@@ -49,6 +50,12 @@ const DrawerNavigation = () => {
             <MyDrawer.Screen
                 name={routes.movies}
                 component={DynamicStackNavigation}
+                options={{
+                    drawerLabel: "Movies",
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="movie" color={color} size={24} />
+                    ),
+                }}
                 
             />
             <MyDrawer.Screen
@@ -58,6 +65,16 @@ const DrawerNavigation = () => {
                     drawerLabel: "Favorites",
                     drawerIcon: ({ color }) => (
                         <MaterialCommunityIcons name="heart" color={color} size={24} />
+                    ),
+                }}
+            />
+            <MyDrawer.Screen
+                name={routes.about}
+                component={About}
+                options={{
+                    drawerLabel: "About",
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="information" color={color} size={24} />
                     ),
                 }}
             />
