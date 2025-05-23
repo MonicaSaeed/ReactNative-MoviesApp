@@ -7,8 +7,15 @@ import { ActivityIndicator, Button, Searchbar } from 'react-native-paper';
 const Movies = () => {
     const { popularMovies, topRatedMovies, upcomingMovies } = useContext(moviesContext);
     const [searchQuery, setSearchQuery] = useState('');
-    const [filterCategory, setFilterCategory] = useState('all');
     const [modalVisible, setModalVisible] = useState(false); 
+
+    const categoryLabels = {
+        all: 'All',
+        popular: 'Popular',
+        topRated: 'Top Rated',
+        upcoming: 'Upcoming'
+    };
+    const [filterCategory, setFilterCategory] = useState('all');
 
     let movies = [];
     if (filterCategory === 'popular') {
@@ -25,13 +32,6 @@ const Movies = () => {
         if (searchQuery === '') return true;
         return movie.title.toLowerCase().includes(searchQuery.toLowerCase());
     });
-
-    const categoryLabels = {
-        all: 'All',
-        popular: 'Popular',
-        topRated: 'Top Rated',
-        upcoming: 'Upcoming'
-    };
 
     return (
         <View style={{ flex: 1, backgroundColor: '#343434' }}>
@@ -99,7 +99,8 @@ const Movies = () => {
             ListEmptyComponent={() => (
             searchQuery ? (
                 <View style={styles.loadingstyle}>
-                <Text style={{ color: '#D7B7FF' }}>No movies found</Text>
+                <Text style={{ color: '#D7B7FF' }}>No movies matching "{searchQuery}"</Text>
+                <Text style={{ color: '#D7B7FF', marginTop: 10, fontSize: 16 }}>Try searching for something else</Text>
                 </View>
             ) : (
                 <View style={styles.loadingstyle}>
