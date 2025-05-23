@@ -54,14 +54,22 @@ npm run start
 Scan the QR code using your Expo Go app or run in a local emulator.
 
 ---
-
 ## 📸 Screenshots
-![splash screen](https://github.com/user-attachments/assets/f2c587ba-2e8a-4238-8969-93bb6ca3e6d8)
-![Home](https://github.com/user-attachments/assets/7411d20e-afac-40fd-80de-31e920e3084c)
-![emptyFav](https://github.com/user-attachments/assets/0a2d8c02-007c-4d48-bfd7-56e9a04a5004)
-![fav](https://github.com/user-attachments/assets/0a31a28f-1e6d-46c3-a36f-cd9532cc4bdd)
-![movie details](https://github.com/user-attachments/assets/188d826c-5eaa-4138-a2f7-9bbe0d63bfc2)
-![about](https://github.com/user-attachments/assets/62fb3eba-d0fc-45fe-91a1-69c14c0bca56)
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f2c587ba-2e8a-4238-8969-93bb6ca3e6d8" alt="splash screen" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/7411d20e-afac-40fd-80de-31e920e3084c" alt="Home" width="300"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/0a2d8c02-007c-4d48-bfd7-56e9a04a5004" alt="emptyFav" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/0a31a28f-1e6d-46c3-a36f-cd9532cc4bdd" alt="fav" width="300"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/188d826c-5eaa-4138-a2f7-9bbe0d63bfc2" alt="movie details" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/62fb3eba-d0fc-45fe-91a1-69c14c0bca56" alt="about" width="300"/></td>
+  </tr>
+</table>
 
 ---
 
